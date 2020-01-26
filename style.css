@@ -1,0 +1,77 @@
+@font-face {
+    font-family:'digital-clock-font';
+    src: url('fonts/digital-7/digital-7.ttf');
+}
+
+body {
+    font-family: sans-serif;
+    background-color: rgb(216, 216, 216);
+}
+
+
+.display { grid-area: display; }
+#clear { grid-area: clear; }
+#sign { grid-area: sign; }
+#percent { grid-area: percent; }
+#zer0 { grid-area: zer0; }
+#one { grid-area: one; }
+#two { grid-area: two; }
+#three { grid-area: three; }
+#four { grid-area: four; }
+#five { grid-area: five; }
+#six { grid-area: six; }
+#seven { grid-area: seven; }
+#eight{ grid-area: eight; }
+#nine { grid-area: nine; }
+#add { grid-area: op-add; }
+#subtract  { grid-area: op-subtract; }
+#multiply { grid-area: op-multiply; }
+#netflix  { grid-area: op-divide; }
+#equals { grid-area: op-equals; }
+
+.grid-container {
+    display: grid;
+    grid-gap: .2rem .2rem;
+    grid-template-areas: 
+        'display display display display'
+        'clear sign percent op-divide'
+        'seven eight nine op-multiply'
+        'four five six op-subtract'
+        'one two three op-add'
+        'zer0 zer0 comma op-equals';
+    grid-template-columns: 19.6vh 19.6vh 19.6vh 19.6vh;
+    margin: 5vh auto;
+    width: 80vh;
+    border: .2rem solid rgb(230, 229, 229);
+    border-radius: 1rem;
+    background-color: rgb(230, 229, 229);
+}
+
+.grid-container > div {
+    padding: 1.4rem 1.4rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.grid-container .display {
+    font-family: 'digital-clock-font';
+    font-size: 5rem;
+    text-align: right;
+}
+
+.keys {
+    background-color: rgb(155, 155, 155);
+    background-clip: padding-box;
+}
+
+.bottom-left {
+    border-bottom-left-radius: 0.85rem;
+}
+
+.operators {
+    background-color: rgb(212, 112, 17);
+}
+
+.bottom-right {
+    border-bottom-right-radius: 0.85rem;
+}
