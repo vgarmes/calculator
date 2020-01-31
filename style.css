@@ -61,17 +61,21 @@ body {
 
 .keys {
     background-color: rgb(155, 155, 155);
-    background-clip: padding-box;
+    transition: all 0.2s ease;
 }
 
 .bottom-left {
     border-bottom-left-radius: 0.85rem;
 }
 
-.operators {
+.keys.operators {
     background-color: rgb(212, 112, 17);
 }
 
 .bottom-right {
     border-bottom-right-radius: 0.85rem;
+}
+
+.keys.pressed {
+    background-color: rgb(209, 209, 209);
 }
