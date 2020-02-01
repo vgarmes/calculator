@@ -104,7 +104,7 @@ function changeSign() {
 function displayPercentage() {
     if (currentValue.toString().length < displayLength-2) {
         currentValue *= 0.01;
-        display.innerHTML *= currentValue;
+        display.innerHTML = currentValue;
     } else {
         clear('Error');
     }
