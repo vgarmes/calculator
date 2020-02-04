@@ -13,20 +13,21 @@ body {
 #clear { grid-area: clear; }
 #sign { grid-area: sign; }
 #percent { grid-area: percent; }
-#zer0 { grid-area: zer0; }
-#one { grid-area: one; }
-#two { grid-area: two; }
-#three { grid-area: three; }
-#four { grid-area: four; }
-#five { grid-area: five; }
-#six { grid-area: six; }
-#seven { grid-area: seven; }
-#eight{ grid-area: eight; }
-#nine { grid-area: nine; }
+#comma { grid-area: comma; }
+.keys[data-key="48"] { grid-area: zer0; }
+.keys[data-key="49"] { grid-area: one; }
+.keys[data-key="50"] { grid-area: two; }
+.keys[data-key="51"] { grid-area: three; }
+.keys[data-key="52"] { grid-area: four; }
+.keys[data-key="53"] { grid-area: five; }
+.keys[data-key="54"] { grid-area: six; }
+.keys[data-key="55"] { grid-area: seven; }
+.keys[data-key="56"] { grid-area: eight; }
+.keys[data-key="57"] { grid-area: nine; }
 #add { grid-area: op-add; }
 #subtract  { grid-area: op-subtract; }
 #multiply { grid-area: op-multiply; }
-#netflix  { grid-area: op-divide; }
+#divide  { grid-area: op-divide; }
 #equals { grid-area: op-equals; }
 
 .grid-container {
